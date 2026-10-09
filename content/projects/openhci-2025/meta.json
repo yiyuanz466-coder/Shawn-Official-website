@@ -1,0 +1,14 @@
+{
+  "order": 1,
+  "year": 2025,
+  "category": "work",
+  "cardSize": "2x2",
+  "cardTone": "violet-dark",
+  "cover": "images/cover.jpg",
+  "coverAlt": {
+    "zh": "爸爸和兩個孩子趴在地毯上畫畫，旁邊的 UFO 造型說故事裝置發出暖光",
+    "en": "A father and two children drawing on the carpet next to a glowing UFO-shaped storytelling device"
+  },
+  "tags": ["HCI", "AI Agent", "Parent-Child Interaction"],
+  "protected": false
+}

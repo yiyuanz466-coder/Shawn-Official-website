@@ -1,0 +1,30 @@
+.card {
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-6) var(--space-8);
+  text-align: center;
+}
+.mark {
+  color: color-mix(in srgb, var(--color-highlight) 45%, transparent);
+}
+.text {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-medium);
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+.highlight {
+  color: var(--color-highlight);
+}
+.label {
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  color: var(--color-text-muted);
+}
+@media (max-width: 639px) {
+  .card { padding: var(--space-6); }
+}

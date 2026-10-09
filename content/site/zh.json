@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "張上元 Shawn｜產品設計與 UX 作品集",
+    "description": "張上元 Shawn 的作品集：產品設計、使用者經驗研究與服務設計。清華大學藝術與設計所，羅技創新部門實習。"
+  },
+  "intro": {
+    "greeting": "嗨 👋",
+    "body": "我是張上元 Shawn，清華大學藝術與設計所碩士生，目前在羅技創新部門實習，專注產品設計、UX 研究與服務設計。"
+  },
+  "quotes": [
+    "好的設計，從**精準定義問題**開始。",
+    "讓洞見**快速變成原型**，再讓使用者告訴我們答案。",
+    "兼顧**使用者價值與商業價值**，設計才會真正落地。"
+  ],
+  "stats": [
+    { "value": "130+", "label": "羅技全球黑客松參與者" },
+    { "value": "2", "label": "個創新概念進入 NPI 階段" },
+    { "value": "4", "label": "篇國內外研討會論文" }
+  ],
+  "about": {
+    "heading": "以研究洞見與快速原型，把使用者需求變成產品。",
+    "paragraphs": [
+      "我是張上元，就讀國立清華大學藝術與設計所碩士班，主修產品設計、使用者經驗研究（UX）與服務設計。我善於結合設計思考與商業思維，精通質性與量化研究，研究成果已發表於國內外研討會（共四篇）。",
+      "在羅技創新部門實習期間，我負責全球黑客松的專案管理，並協助部門把散落的創新點子數位化成可搜尋的資料庫，導入 NotebookLM 讓同仁能以自然語言檢索與收斂概念。其中兩個創新想法被公司高層選中，進入 NPI 階段。",
+      "我也是臺大資料分析與決策社、臺大管理顧問社的成員，習慣從精準定義問題出發，以數據驅動決策。"
+    ],
+    "experience": [
+      {
+        "period": "2025/3 – 迄今",
+        "org": "羅技 Logitech｜Innovation & Scenario Lab",
+        "role": "Taiwan Innovation 實習生",
+        "description": "與各部門主管共同制定年度創新題目，舉辦梅竹黑客松、MakeNTU、Logi 黑客松、Epoch Garage+ 等 4 項創新競賽，於 NT$120 萬預算內準時交付；吸引 50+ 支團隊、300+ 人參與，產出 100+ 個創新概念與 PoC，其中 2 項硬體概念（滑鼠、鍵盤）進入 NPI。另開發部門網站並導入 NotebookLM 建置創新知識庫，主導 3+ 場 Future Design 工作坊。",
+        "logo": "logo-logitech.png",
+        "logoAlt": "Logitech 羅技標誌"
+      },
+      {
+        "period": "2025/1 – 2025/2",
+        "org": "台灣設計研究院｜前瞻研發組",
+        "role": "設計研究實習生（該屆錄取率 2.89%）",
+        "description": "2 個月內研究超過 30 篇智慧醫療與設計科技文獻、10 項前瞻議題，舉辦專家座談會並分析訪談內容，提出關鍵前瞻趨勢與國際市場需求。",
+        "logo": "logo-tdri.png",
+        "logoAlt": "台灣設計研究院標誌"
+      },
+      {
+        "period": "2022/7 – 2023/6",
+        "org": "台灣微軟 Microsoft｜終端夥伴暨解決方案業務事業群",
+        "role": "行銷實習生",
+        "description": "以 Excel 清洗超過 10 萬筆電腦銷售數據並建立 Power BI 儀表板，呈現 OEM 與通路 SKU 的 MoM／QoQ 銷售，作為下半年預算配置依據；與 Intel 及經銷夥伴於 2 場 Roadshow 與發表會推廣 Windows 11、Microsoft 365（累計 110+ 位參與者）。",
+        "logo": "logo-microsoft.png",
+        "logoAlt": "Microsoft 微軟標誌"
+      },
+      {
+        "period": "大學至碩士期間",
+        "org": "國科會研究計畫",
+        "role": "研究助理",
+        "logo": "logo-nthu.png",
+        "logoAlt": "國立清華大學校徽",
+        "description": "協助三項國科會計畫：AIGC 對設計流程的影響、實體與虛擬介面的感性與使用性評價、腹膜透析病患居家衛教。負責實驗設計、數據收集與分析（Excel、SPSS）。"
+      }
+    ],
+    "education": [
+      { "period": "在學中", "school": "國立清華大學", "degree": "藝術與設計學系碩士班" }
+    ],
+    "clubs": [
+      {
+        "name": "臺大管理顧問社 NTU Consulting Club",
+        "logo": "ntucc.png",
+        "logoAlt": "臺大管理顧問社 NTU Consulting Club 標誌",
+        "description": "接受完整的顧問思維訓練，培養精準定義問題、拆解問題與結構化溝通的能力。"
+      },
+      {
+        "name": "臺大資料分析與決策社 NTU Data Analytics Club",
+        "logo": "ntudac.png",
+        "logoAlt": "臺大資料分析與決策社 NTU Data Analytics Club 標誌",
+        "description": "學習資料分析方法與工具，建立以數據驅動決策的問題解決方法論。"
+      }
+    ]
+  }
+}

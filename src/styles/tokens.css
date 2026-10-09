@@ -1,0 +1,77 @@
+/* Design Tokens：所有視覺數值的唯一來源。元件只能引用這裡的變數。 */
+:root {
+  /* 字體 */
+  --font-sans: "Poppins", "Noto Sans TC", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: clamp(1rem, 0.96rem + 0.18vw, 1.0625rem);
+  --text-lg: clamp(1.125rem, 1.06rem + 0.3vw, 1.25rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.4vw, 2.25rem);
+  --text-display: clamp(2.25rem, 1.6rem + 3vw, 4rem);
+  --leading-body-zh: 1.75;
+  --leading-body-en: 1.6;
+  --leading-tight: 1.2;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  /* 間距（4px 基礎） */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* 圓角 */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-card: 28px;
+  --radius-pill: 999px;
+
+  /* 動效 */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
+
+  /* 版面 */
+  --container-max: 1080px;
+  --prose-max: 720px;
+  --gutter: 16px;
+  --grid-gap: 12px;
+  --header-height: 120px;
+
+  /* 卡片主題色（深淺模式共用） */
+  --card-purple: #8a55f0;
+  --card-violet-dark: #2a1640;
+  --card-coral: #c9573c;
+  --card-ink: #1a1a1a;
+  --card-lavender: #d9d4ff;
+  --card-teal: #277d72;
+  --on-dark: #ffffff;
+  --on-light: #2c2c2c;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --gutter: 24px;
+    --grid-gap: 20px;
+  }
+}
+
+@media (min-width: 900px) {
+  :root {
+    --header-height: 72px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+  }
+}

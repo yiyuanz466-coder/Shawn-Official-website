@@ -1,0 +1,98 @@
+---
+title: "DearPlanet: Co-creating Bedtime Stories with an AI Agent"
+summary: "DearPlanet turns a child's drawing into their own planet and lets AI co-create the story with parents and child, so kids stop just listening and parents stop hunting for material."
+role: Team member (team of 6)
+timeline: "2025 · OpenHCI 2025"
+team: "Shang-Yuan Chang, 鄭羽芹, 林履杰, 許安, 鄭婷云, 魏秭翊 (TAs: 傅鈺婷, 李佳蓉)"
+tools: [ESP32, KMeans, Generative AI, Three.js, Gesture recognition, Speech recognition]
+highlights:
+  - value: "Best Interaction"
+    label: "Award at OpenHCI 2025"
+  - value: "Ages 3–7"
+    label: "Target children"
+  - value: "3 steps"
+    label: "Scan drawing → co-create story → planet journal"
+---
+
+## Context
+
+**OpenHCI** is a human-computer interaction design workshop in Taiwan where teams go from research and ideation to an interactive prototype in a short time. Our team chose bedtime stories: a moment almost every family shares, yet one that is rarely redesigned.
+
+## Problem
+
+For children aged **3–7**, building critical thinking and self-expression is essential. Yet most story players and parenting media **only play content one way**, with no interactive context, so children absorb passively and struggle to internalize what they learn or express their feelings.
+
+Parents, meanwhile, face information overload and limited time. Guiding a child through everyday topics, emotions and values often means designing activities or finding content themselves, **a heavy cognitive load**.
+
+<Callout title="Design question">
+How might we turn bedtime stories from one-way playback into an interactive ritual that parents and children create together, while lightening the load on parents?
+</Callout>
+
+## Research & insights
+
+Child development research gave us two design anchors:
+
+- Children aged **4–7** are in the pre-schematic stage, and their drawings come from conscious observation of real life (Lowenfeld, 1947). In other words, **a child's drawing is a window into their thinking**.
+- Children aged **3–6** benefit from picture books with a clear narrative arc, which build attention and comprehension (Mol, 2011).
+
+<Callout title="Key insight">
+If the story starts from the child's own drawing and grows from the family's conversation, the child becomes a co-author, and parents get to hear what their child really thinks.
+</Callout>
+
+## Ideation
+
+We converged on **a daily bedtime-story ritual built around AI co-creation**, with three design goals:
+
+<MetricRow items={[
+  { value: 'Less load for parents', label: 'No more preparing story material' },
+  { value: 'AI × child co-creation', label: "The child's choices and reflections shape the story" },
+  { value: 'A story of their own', label: 'Every planet and every story is unique' },
+]} />
+
+## Design & iteration
+
+The product combines a **UFO-shaped storytelling device** with an **app**. The UFO echoes the "story planet" world, and a light-up start cue gives storytelling a sense of ritual.
+
+<Figure src="images/device.jpg" alt="Two UFO-shaped storytelling devices with clear domes and glowing bases" caption="The UFO storyteller: light marks the start, and parents and kids can adjust the projection angle and focus themselves." />
+
+The experience has three steps:
+
+1. **Scan the child's drawing to generate a unique story**: AI uses the drawing and the child's words to create a planet and an opening story.
+2. **Co-create the story with an AI agent**: AI answers questions from parents and children and steers the story in new directions based on the conversation.
+3. **Planet journal & recap**: key discussions, insights into the child's thinking and suggestions are summarized each day for the family to revisit together in the app.
+
+<Figure src="images/flow.jpg" alt="Three steps: the UFO device projects light onto a child's drawing to scan it, the device shows AI story-generation progress, and a phone app shows the planet journal" caption="Scan the drawing → co-create with AI → revisit the planet journal." wide />
+
+We also designed a cast of characters so children always have familiar companions in the story world.
+
+<Figure src="images/characters.jpg" alt="Four character illustrations: a white mascot with a planetary ring reading a book, a blue monster, a pink ghost and a yellow star" caption="DearPlanet's mascot and story characters." wide />
+
+## Solution
+
+The system runs two pipelines:
+
+- **Drawing scan & planet generation**: an ESP32 captures the drawing in real time, **KMeans clustering** extracts its main colors, generative AI renders the planet, and **Three.js** displays it.
+- **Interactive story generation**: AI writes the opening story, then **gesture** and **speech recognition** let the family pause, continue or regenerate the story mid-conversation.
+
+<Figure src="images/planets.jpg" alt="Four irregular, gradient-colored planet renders on a black background" caption="Planets generated from the main colors of children's drawings." wide />
+
+<Figure src="images/web-planet.jpg" alt="The Wish Planet web interface: a planet in the center of a purple starry sky that can be browsed by scrolling" caption="The 'Wish Planet' interface: scroll to explore each planet grown from a child's drawing." wide />
+
+Try it online: [Wish Planet at open-hci.vercel.app](https://open-hci.vercel.app/open)
+
+<Video src="images/story-demo.mp4" poster="images/story-demo-poster.jpg" alt="Demo of an AI-generated interactive picture book: entering the story from a planet, with illustrations of a cat and a girl and story text" caption="AI-generated interactive picture book demo." wide />
+
+## Results
+
+- Won the **Best Interaction Award** at **OpenHCI 2025**.
+- Delivered a working prototype that connects drawing scan, planet generation, the AI picture book and the planet journal into one parent-child story experience.
+
+## Reflection
+
+This project taught me that a good AI experience doesn't replace parents as storytellers; it **sits between parent and child** as a prompt for conversation. The child's drawings and answers are the real heroes of the story.
+
+If I took it further, I would:
+
+- Run a long-term study with real families to see whether the bedtime ritual sticks and whether parent-child conversations improve.
+- Design stronger safety checks for AI-generated content so stories are always appropriate for young children.
+- Make the planet journal's analysis more concrete, so it genuinely helps parents understand their child's feelings and ideas.

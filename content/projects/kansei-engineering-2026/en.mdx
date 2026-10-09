@@ -1,0 +1,127 @@
+---
+title: "Slow Coaster: Designing Slow Interaction for Everyday Rituals"
+summary: "Combining Kansei Engineering and Slow Design, we built an interactive coaster that deliberately slows you down — and found that friction heals in solitude but disrupts in company."
+role: Co-author (second author)
+timeline: "2026 · Presented at KEER 2026"
+team: Ya-Ching Chang, Shang-Yuan Chang, Yaliang Chuang
+tools: [Semantic Differential, EFA, Research through Design, NFC, Wizard-of-Oz]
+highlights:
+  - value: "N=32"
+    label: "Semantic differential survey on 15 coasters"
+  - value: "88%"
+    label: "Variance explained by three Kansei factors"
+  - value: "6 / 8"
+    label: "participants found slow interaction disrupted socializing"
+---
+
+## Context
+
+Most interactive products are optimized for speed and zero friction. Yet in everyday rituals such as drinking a cup of tea, meaning often lives in the pause itself: the weight of the glass, the care in setting it down.
+
+Slow Design argues for deliberately adding **behavioral friction**, resistance that demands conscious engagement, so people stop and return to the present. Strauss and Fuad-Luke describe six principles: Reveal, Expand, Reflect, Engage, Participate and Evolve.
+
+However, most prior work **assumes slowness is inherently positive** and rarely asks how the same slow interaction is perceived across different social contexts.
+
+## Problem
+
+<Callout title="Research question">
+How can behavioral friction be deliberately embedded into a familiar everyday object to support ritual and reflection, and how is its value shaped by social context?
+</Callout>
+
+- **RQ1**: How can Kansei Engineering and Slow Design principles translate abstract "slowness" into a concrete interactive artifact?
+- **RQ2**: Does the friction that fosters mindful reflection in solitary use disrupt the flow of interaction in group settings?
+
+## Research & insights
+
+We followed a **Research through Design** approach in three phases: quantitative Kansei Engineering → prototype development → situated evaluation.
+
+### Phase I: Finding the empty space with Kansei Engineering
+
+We observed how people handle tableware in bars, coffee shops and homes, then curated 15 representative coaster samples.
+
+<Figure src="images/coaster-samples.jpg" alt="Fifteen diverse coaster samples, including vinyl-record, wooden, glass, glowing and cartoon designs" caption="The 15 coaster samples used in the semantic differential survey." wide />
+
+We built a semantic differential (SD) scale of **10 bipolar adjective pairs** mapped to five Slow Design principles, and replaced academic terms with plain wording after a 5-person pilot. Thirty-two participants then rated every sample on a seven-point scale.
+
+**Exploratory Factor Analysis (EFA)** revealed three Kansei factors explaining **87.94%** of the variance:
+
+<MetricRow items={[
+  { value: 'Factor 1', label: 'Emotional expression & style' },
+  { value: 'Factor 2', label: 'Technology & manufacturing orientation' },
+  { value: 'Factor 3', label: 'Value & durability' },
+]} />
+
+<Figure src="images/efa-map.jpg" alt="The 15 coaster samples plotted in a three-dimensional space of the three Kansei factors, highlighting empty regions for humor, high interactivity and emotional richness" caption="Plotting the EFA result in 3D shows almost no existing products in the 'emotionally rich, highly interactive, humorous' region." />
+
+<Callout title="Key insight">
+Coasters that combine **emotional richness, high interactivity and humor** barely exist. That gap is where slow design can step in.
+</Callout>
+
+## Ideation
+
+Guided by this gap, we split the Slow Design principles into two layers of friction:
+
+- **Physical: visceral friction**. Handcrafted, irregular glass with uneven weight and texture can't be set down carelessly. An embedded LED provides ambient feedback.
+- **Digital: reflective pacing**. The app pushes back against "instant access" and asks users to pause and notice how they feel.
+
+## Design & iteration
+
+The result is the **Slow Coaster**: a handcrafted glass coaster with embedded NFC and LED, paired with a web app.
+
+<Figure src="images/coaster-app.jpg" alt="A phone held over a glowing blue glass coaster, showing the app's launch screen" caption="Tapping the phone on the coaster is the only way in, a deliberate hands-on step." />
+
+Four mechanisms each carry one slow-design strategy:
+
+1. **High-friction entry**: users must physically scan the coaster to launch the app, breaking the stimulus-response loop of notifications.
+2. **Temporal buffering**: the app loads at a deliberate pace, turning waiting into a moment of transition.
+3. **Emotional mirroring**: users log their mood, and the coaster's light color and an AI-curated playlist respond.
+4. **AI & social connection**: users revisit their mood and music history and see traces left by previous users of the same coaster.
+
+<Figure src="images/interaction-flow.jpg" alt="Interaction flow: A scan the coaster to launch the app, B slow loading screen, C log your mood, D the coaster lights up and plays a playlist, E browse past entries and shared history" caption="Core interaction flow: scan, slow launch, mood logging, then light and music feedback." wide />
+
+<Video src="images/demo.mp4" poster="images/demo-poster.jpg" alt="Slow Coaster demo video: tapping the phone on the coaster, logging a mood, and the coaster light changing with the mood" caption="Slow Coaster walkthrough." wide />
+
+## Solution
+
+The Slow Coaster turns slowness into three layers of experience:
+
+- **Slowness you can touch**: the weight and texture of irregular glass make setting a cup down a conscious act.
+- **Slowness you can see**: ambient light quietly mirrors your mood; you can notice it or ignore it.
+- **Slowness you choose**: scanning and mood logging are reflective moments the user opts into.
+
+## Results
+
+We tested the prototype in two contrasting settings: a lively **commercial bar** (N=5, including a bartender, a waitress and the owner) and a quiet **living room** (N=3). Light feedback was simulated with a Wizard-of-Oz protocol. Each session lasted about 20 minutes and was followed by a semi-structured interview and thematic analysis.
+
+Everyone loved the glass and the light, but the explicit app interaction split opinions sharply:
+
+- **Healing in solitude**: participants described the experience as "healing", helping them clear their minds and relax. The bar owner said it turned waiting for a drink into a "ritualistic experience" for solo guests.
+- **Disruption in company**: 6 of 8 participants felt slow interaction was unwelcome in social settings, because looking at a phone cut off the conversation.
+- **Ambient light as an icebreaker**: light colors and mood history became "topic-openers" with friends and even strangers.
+
+> "When friends are there, I don't want to spend time selecting my mood — I want to interact with them." — P6
+
+From these findings we propose three design provocations:
+
+<MetricRow items={[
+  { value: 'Gentle Revelation', label: 'Peripheral ambient cues instead of attention-demanding notifications' },
+  { value: 'Reflective Pacing', label: 'Default to low friction; enter the ritual only by choice' },
+  { value: 'Contextual Friction', label: 'Calibrate interaction effort to who is around' },
+]} />
+
+The work was presented at **KEER 2026, the International Conference on Kansei Engineering and Emotion Research** (Eugene, Oregon, USA).
+
+<Figure src="images/poster.jpg" alt="Designing for Rituals research poster showing the interaction flow and three design provocations" caption="KEER 2026 research poster." wide />
+
+## Reflection
+
+**Slowness is not inherently good; its value depends on social context.** Friction should be a calibrated design choice, not a universal rule.
+
+The study also has limitations that point to next steps:
+
+- AI recommendations and light feedback were simulated with predefined playlists and Wizard-of-Oz. A real AI backend is needed to test long-term personalization.
+- The social history used pre-built data; a live deployment needs clear consent and privacy design.
+- Eight participants in single 20-minute sessions only capture ritual initiation. Longer, larger studies are needed to see whether annoying friction becomes a ritual through habit.
+- The "humor" identified in the Kansei analysis is hard to deliver through digital feedback alone. Combining the responsiveness of AI software with the symbolic meaning of physical objects is a promising direction.
+
+<Figure src="images/team.jpg" alt="Group photo of the three research team members" caption="The research team (I'm on the far left)." />

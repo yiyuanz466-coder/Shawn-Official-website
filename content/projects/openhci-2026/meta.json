@@ -1,0 +1,14 @@
+{
+  "order": 2,
+  "year": 2026,
+  "category": "work",
+  "cardSize": "2x2",
+  "cardTone": "purple",
+  "cover": "images/cover.jpg",
+  "coverAlt": {
+    "zh": "兩張 (AI)dentity 拍貼，以插畫風格呈現一群人擺出不同表情與姿勢",
+    "en": "Two (AI)dentity photo-booth strips showing a group in illustrated style striking different poses"
+  },
+  "tags": ["HCI", "Generative AI", "Photography"],
+  "protected": false
+}

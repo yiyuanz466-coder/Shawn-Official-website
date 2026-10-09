@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-auto-flow: dense;
+  gap: var(--grid-gap);
+}
+
+/* 平板與桌機：列高等於欄寬，讓 1x1 卡片接近正方形 */
+@media (min-width: 640px) {
+  .grid {
+    --cols: 2;
+    grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+    grid-auto-rows: calc(
+      (min(var(--container-max), 100vw - 2 * var(--gutter)) - (var(--cols) - 1) * var(--grid-gap)) / var(--cols)
+    );
+  }
+}
+@media (min-width: 1024px) {
+  .grid { --cols: 4; }
+}
+
+/* 前 8 張卡片依序延遲進場 */
+.grid > :nth-child(2) { --reveal-delay: 40ms; }
+.grid > :nth-child(3) { --reveal-delay: 80ms; }
+.grid > :nth-child(4) { --reveal-delay: 120ms; }
+.grid > :nth-child(5) { --reveal-delay: 160ms; }
+.grid > :nth-child(6) { --reveal-delay: 200ms; }
+.grid > :nth-child(7) { --reveal-delay: 240ms; }
+.grid > :nth-child(8) { --reveal-delay: 280ms; }

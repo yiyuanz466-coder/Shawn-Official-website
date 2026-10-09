@@ -1,0 +1,40 @@
+.card {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-6);
+}
+.avatar {
+  flex: none;
+  width: clamp(88px, 22%, 160px);
+  aspect-ratio: 1;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  background: var(--color-bg);
+}
+.text {
+  min-width: 0;
+}
+.greeting {
+  font-weight: var(--weight-medium);
+}
+.body {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  color: var(--color-text);
+}
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-accent);
+}
+
+@media (max-width: 639px) {
+  .card { padding: var(--space-5); }
+}

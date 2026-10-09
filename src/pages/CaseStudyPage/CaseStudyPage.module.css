@@ -1,0 +1,7 @@
+.notice {
+  max-width: var(--prose-max);
+}
+.loading {
+  padding-block: var(--space-12);
+  color: var(--color-text-muted);
+}

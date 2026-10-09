@@ -1,0 +1,111 @@
+---
+title: "心理健康 App 使用者測試：Smiling Mind、Insight Timer 與心光"
+summary: 以 30 位參與者的使用者測試，結合 SUS、UEQ-S、產品反應卡與主題式分析，找出三款心理健康 App 的體驗問題，並提出資訊架構與介面的改版建議。
+role: 研究成員（3 人團隊）
+timeline: "2024｜國立清華大學"
+team: 張上元、陳圓宓、張雅晴
+tools: [SUS, UEQ-S, Product Reaction Cards, 主題式分析, One-way ANOVA, 資訊架構]
+highlights:
+  - value: "30 位"
+    label: "使用者測試參與者（19–32 歲）"
+  - value: "3 款"
+    label: "心理健康 App 比較"
+  - value: "< 68"
+    label: "三款 App 的 SUS 分數都低於標準值"
+---
+
+## 背景
+
+**心理健康需求正在上升**：社會越來越重視心理健康（Swazer, 2024），新冠疫情期間的社交隔離也讓心理壓力增加（Torres, 2024）。
+
+傳統的心理健康干預像是**書寫練習**與**冥想**，已被證實能幫助釋放壓力、提升自我覺察與情緒調節（Pennebaker & Beall, 1986；Tang et al., 2015）。這些做法現在大量被搬進 App：從個人化建議、冥想課程，到 AI 聊天陪伴與社群支持。
+
+我們挑選三款各有代表性的 App 進行比較：
+
+<MetricRow items={[
+  { value: 'Smiling Mind', label: '全球最大的免費冥想資源' },
+  { value: 'Insight Timer', label: '全球最大的心理健康社群' },
+  { value: '心光', label: '結合 AI 陪伴、心情與日記紀錄' },
+]} />
+
+## 問題
+
+<Callout title="研究目的">
+這些 App 能不能真正協助使用者完成心理健康相關的任務？使用過程中會遇到哪些困難？使用者對它們又有什麼期待？
+</Callout>
+
+## 研究與洞察
+
+### 研究設計
+
+- **參與者**：30 位（男性 10 位、女性 20 位），19–32 歲，其中 10 位有使用心理健康 App 的經驗，以滾雪球抽樣招募。
+- **測試任務**：每款 App 各設計 5 個任務，涵蓋主要功能：記錄心情、探索課程、設定提醒、陪伴互動（直播或 AI 對話），以及找到訂閱說明。
+- **收集指標**：SUS 系統易用性量表、UEQ-S 使用者經驗問卷（簡短版）、PRC 產品反應卡，再加上操作過程的螢幕錄影與訪談錄音。
+
+### 量化結果：三款 App 的易用性都不及格
+
+SUS 平均分數以 **Insight Timer 最高（63 分）**，其次是 **Smiling Mind（54.5 分）**，**心光最低（41.5 分）**。單因子變異數分析顯示三者之間接近顯著差異（F = 3.244, p = 0.055）。**三款 App 都低於 SUS 標準值 68 分**，易用性都還有很大的改善空間。
+
+<Figure src="images/sus.jpg" alt="三款 App 的 SUS 平均分數：Smiling Mind 54.5 分、Insight Timer 63 分、心光 41.5 分" caption="SUS 系統易用性分析：三款 App 都低於標準值 68 分。" wide />
+
+<Figure src="images/ueq.jpg" alt="三款 App 的 UEQ-S 使用者經驗問卷結果長條圖，分為務實與享樂兩個面向" caption="UEQ-S 分析：從務實（Pragmatic）與享樂（Hedonic）兩個面向比較使用者經驗。" wide />
+
+<Figure src="images/prc.jpg" alt="Smiling Mind 的產品反應卡文字雲，最大的詞是困惑的、有幫助的、複雜的" caption="產品反應卡文字雲（Smiling Mind）：「困惑的」「有幫助的」「複雜的」同時出現。" wide />
+
+### 質性分析：用設計原則找出問題根源
+
+我們依照 Braun & Clarke（2006）的**主題式分析**，把訪談逐字稿進行開放編碼，再用兩組設計原則當分析框架：
+
+- **子類別**：Nielsen 的十項易用性原則
+- **主類別**：五項 UX 設計原則：心智模型、多赫提門檻、認知負擔、美感可用性效應、主動使用者悖論
+- **核心主題**：劣勢與挑戰、優勢與機會、長期發展可能
+
+<Figure src="images/themes.jpg" alt="三款 App 的質性分析主題分布圓環圖，分成劣勢與挑戰、優勢與機會、長期發展可能三類" caption="三款 App 的質性分析主題分布。" wide />
+
+<Callout title="關鍵洞察">
+三款 App 的問題高度相似：**資訊架構太深、功能命名不符合使用者的心智模型、操作缺乏回饋、沒有新手引導**。使用者形容自己是在「地毯式摸索」，而不是在放鬆。
+</Callout>
+
+> 「沒辦法一眼知道他的所有功能分布在哪裡。」—— P5
+
+> 「那個色調給我的感覺蠻商業化的，跟我想像中的冥想不太一樣。」—— P3
+
+## 發想
+
+針對每款 App 的問題，我們分別提出四個設計方向：
+
+- **Smiling Mind**：簡潔直覺的介面、按鈕互動回饋、加入幫助與說明文件、符合使用者的語言（例如提供中文）。
+- **Insight Timer**：整合複雜的資訊架構、提升核心功能的顯著性、提供新手導覽、符合使用者習慣。
+- **心光**：符合使用者習慣的用詞與圖示、降低功能複雜度、讓 AI 協助說明、提升操作的靈活性。
+
+## 設計與迭代
+
+以 Insight Timer 為例，原本的資訊架構中，心情紀錄分散在多個入口，「More」選單裡的重要功能也容易被忽略。我們把重複的功能合併、重新分層，並把心情紀錄與個人頁移到更顯眼的位置，也加入新手教學。
+
+<BeforeAfter before="images/ia-before.jpg" after="images/ia-after.jpg" beforeAlt="Insight Timer 改版前的資訊架構圖，功能分散在 Home、Library、Explore、Community 等多個分支" afterAlt="Insight Timer 改版目標的資訊架構圖，整合重複功能並新增 Check In、More 與新手教學" caption="Insight Timer 資訊架構：改版前 vs 改版目標。" />
+
+## 解法
+
+三款 App 的設計提案：
+
+<Figure src="images/proposal-smiling-mind.jpg" alt="Smiling Mind 改版提案：手機原型畫面與 Figma 原型的 QR Code" caption="Smiling Mind：簡化層級、加入 Onboarding 與即時回饋。" wide />
+
+<Figure src="images/proposal-insight-timer.jpg" alt="Insight Timer 改版提案：多個手機畫面，包含新手導覽與重新整理的首頁" caption="Insight Timer：整合資訊架構、提升功能顯著性、加入新手導覽。" wide />
+
+<Figure src="images/proposal-xinguang.jpg" alt="心光改版提案：多個手機畫面與六項設計說明" caption="心光：改用常見的用詞與圖示、日曆與圖表分層、多種快速紀錄方式、淺色暖色系主視覺。" wide />
+
+## 成果
+
+每一個設計建議背後都有取捨。我們把它們整理成設計權衡，作為開發團隊決策時的參考：
+
+<Figure src="images/tradeoffs.jpg" alt="三款 App 的設計建議與權衡對照表，例如功能多樣 vs 操作簡單、主動探索 vs 適時說明" caption="設計建議與權衡：例如「功能多樣 vs 操作簡單」「主動探索 vs 適時說明」。" wide />
+
+- **Smiling Mind**：設計應簡潔直覺，提供適當回饋與清楚指引，並貼近使用者的語言。
+- **Insight Timer**：提供多元功能滿足個人化需求，同時確保效率與直觀，並把資訊分級呈現。
+- **心光**：幫助使用者輕鬆完成任務，同時保留 App 的個人化特色。
+
+## 反思
+
+心理健康 App 的使用情境很特別：使用者打開它時，往往正處在壓力或情緒低落的狀態。**任何一點困惑或等待，都會直接抵銷 App 想帶來的放鬆感。**
+
+這次研究讓我學到如何把量化指標（SUS、UEQ-S）和質性訪談結合起來：數字告訴我們「哪裡有問題」，訪談才告訴我們「為什麼」。如果再做一次，我會想針對改版提案做第二輪可用性測試，驗證 SUS 分數是否真的提升。

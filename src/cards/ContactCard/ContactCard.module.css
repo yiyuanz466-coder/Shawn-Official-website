@@ -1,0 +1,21 @@
+.card {
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-5);
+}
+.icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+}
+.email { color: #ea4335; background: color-mix(in srgb, #ea4335 10%, transparent); }
+.linkedin { color: #0a66c2; background: color-mix(in srgb, #0a66c2 10%, transparent); }
+[data-theme='dark'] .linkedin { color: #4ea1f3; }
+.label {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-muted);
+}

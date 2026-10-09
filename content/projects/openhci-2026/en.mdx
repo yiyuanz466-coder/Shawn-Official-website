@@ -1,0 +1,104 @@
+---
+title: "SoulSee: An AI Photo Coach That Gradually Steps Back"
+summary: "Instead of offering trending photos to copy, SoulSee turns the feeling you want to capture into pose and composition suggestions, then fades out as you gain experience so the judgment stays yours."
+role: "TA (teaching assistant) · Mentored Group 6"
+timeline: "2026 · OpenHCI 2026 workshop"
+team: "Members: 楊沛蓉, 鐘奇恩, 張晉齡, 陳奕潔, 黃忻妤 · TAs: 盧奕安, Shang-Yuan Chang"
+tools: [Generative AI, Qualitative interviews, Journey mapping, Prototype testing]
+highlights:
+  - value: "6"
+    label: "interviewees (aged 20–25, travel photographers who use AI tools)"
+  - value: "3 → 0"
+    label: "AI hints fade out: three → two → one → none"
+  - value: "GIF"
+    label: "records the decisions made before the shutter"
+---
+
+## Context
+
+I mentored Group 6 as a teaching assistant at the **OpenHCI 2026 workshop**, whose theme was "identity, agency and responsibility after AI intervenes."
+
+With social media woven into daily life, our idea of a "good" photo is shaped by trending compositions, filters, poses and algorithms, and personal taste can quietly give way to mainstream style.
+
+## Problem
+
+The team framed the problem through three papers:
+
+- **Ideas need a medium to take shape**: inner ideas start out vague and are gradually formed through external media (Suwa & Tversky, 1997). Photography is the same: between the idea and the photo, people often get stuck not knowing how to shoot.
+- **Social media pre-shapes our imagination**: idealized images on social media shape what people expect a photo to look like, steering where they shoot, how they pose and how they frame (Siegel et al., 2022). Most travel photos fall into a handful of common Instagram angles.
+- **AI should help people express, not hand out answers**: AI should help users turn vague feelings and ideas into visible, adjustable expression (Brade et al., 2023).
+
+<Callout title="Research question">
+How can AI help users turn inner feelings into concrete images while preserving their own photographic judgment and agency?
+</Callout>
+
+## Research & insights
+
+The team combined a literature review, **qualitative interviews** and **prototype testing**, analyzing decisions such as editing prompts, reshooting, and adopting or departing from AI suggestions.
+
+- **Participants**: 6 people (2 men, 4 women), aged 20–25, university students and new graduates
+- **Criteria**: all take travel photos, have used AI tools, and shoot mainly on phones
+
+<Figure src="images/journey-as-is.jpg" alt="Current user journey: find a moment worth capturing, imagine the ideal photo, start shooting, review and save; the emotion curve dips during shooting and review" caption="Current journey: emotion bottoms out while shooting and reviewing. “Am I doing this right?” “It doesn't look like what I imagined…”" wide />
+
+<Callout title="Key insight">
+Users don't lack examples; they **don't know how to turn the feeling in their head into a concrete pose and composition**. An AI that hands them a standard answer pulls them further from the photo they wanted.
+</Callout>
+
+## Ideation
+
+Rather than offering trending photos to imitate, SoulSee first guides users to describe what they want to express:
+
+- What am I feeling right now?
+- How do I want to present myself?
+- What mood or atmosphere should the photo carry?
+
+AI then translates these feelings into **pose, expression and composition suggestions**, so every shot starts from the user's own intent. The core idea: **the AI steps back, the judgment stays**.
+
+<Figure src="images/concept.jpg" alt="Three design concepts: a green photo-suggestion ghost, an AI coach that gradually steps back, and a GIF recording decisions before the shutter" caption="Three concepts: a suggestion ghost, a fading AI coach, and a record of pre-shutter decisions." wide />
+
+- **Suggestion ghost**: turns abstract emotions into poses, expressions and compositions users can mirror, easing the "I don't know how to shoot this" problem.
+- **An AI coach that fades out**: as users gain experience, hints drop from three to two (random), to one, to none.
+- **Pre-shutter decision record**: a GIF captures how pose, expression and framing were adjusted, revealing how a personal style forms.
+
+## Design & iteration
+
+The team built the concept into a web photo booth, **(AI)dentity**, with five steps:
+
+1. **Choose a format**: one, two or four frames; the format sets the aspect ratio.
+2. **Generate a ghost**: describe a style in a prompt to generate a "ghost" preview.
+3. **Shoot**: a translucent ghost overlays the camera; align your pose with an opacity slider, pick a filter, press the shutter.
+4. **Result**: compare the shots and download the strip, a QR code or a GIF, or reshoot.
+5. **Album**: photos are collected into an album, filterable by ghost, outline or no-assist mode.
+
+<Figure src="images/flow.jpg" alt="Five phone screens: choose format, generate ghost, shoot, result, album" caption="The (AI)dentity flow." wide />
+
+<Video src="images/demo.mp4" poster="images/demo-poster.jpg" alt="(AI)dentity demo: the user enters a 'melancholy artsy girl' style, the AI generates a ghost, and she follows the translucent overlay to pose and take the photo" caption="Demo: describe the style you want, follow the AI ghost, and take the shot." wide />
+
+Try it: [(AI)dentity photo booth](https://openhci.cechung.com/cuts) (best on a phone)
+
+## Solution
+
+With SoulSee, the journey gains two new stages: "ask the AI for help" and "adjust and reshoot." Users can accept, modify or reject each suggestion, and a final recap lets them see how they have grown.
+
+<Figure src="images/journey-to-be.jpg" alt="Future user journey: six stages adding seek AI help, adjust and reshoot, and review; the emotion curve keeps rising" caption="The journey with SoulSee: the emotion curve keeps rising, ending with “I'm getting better at expressing myself through photos!”" wide />
+
+## Results
+
+The team summarized SoulSee's value on three levels:
+
+<MetricRow items={[
+  { value: 'In the moment', label: 'Turns abstract feelings into an actionable way to shoot' },
+  { value: 'In the process', label: 'Lets users practise judging, adapting and weighing AI advice' },
+  { value: 'Long term', label: 'Builds personal technique, style and self-expression' },
+]} />
+
+> SoulSee doesn't find the right answer for users; it accompanies them from imitation and experimentation until they can see, and shoot, who they are.
+
+<Figure src="images/poster.jpg" alt="SoulSee poster with the title, problem background, three concept icons and a four-step flow of phone screens" caption="Group 6's poster at OpenHCI 2026." />
+
+## Reflection
+
+This was my first time switching from participant to TA. The year before, I joined OpenHCI myself (with DearPlanet); this year I walked another team from literature and interviews all the way to a working prototype.
+
+Their topic stayed with me: as AI gets better at giving suggestions, designers need to think harder about **when the AI should step back**. Good AI assistance should leave people more capable, not more dependent.

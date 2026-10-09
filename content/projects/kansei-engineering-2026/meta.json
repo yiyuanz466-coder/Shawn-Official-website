@@ -1,0 +1,14 @@
+{
+  "order": 3,
+  "year": 2026,
+  "category": "work",
+  "cardSize": "1x2",
+  "cardTone": "coral",
+  "cover": "images/cover.jpg",
+  "coverAlt": {
+    "zh": "手工玻璃杯墊在茶杯下方發出暖黃色光",
+    "en": "A handcrafted glass coaster glowing warm yellow under a cup of tea"
+  },
+  "tags": ["Kansei Engineering", "Slow Design", "Research through Design"],
+  "protected": false
+}

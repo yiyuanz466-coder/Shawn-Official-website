@@ -1,0 +1,28 @@
+.footer {
+  margin-top: var(--space-16);
+  padding-block: var(--space-8);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  list-style: none;
+  padding: 0;
+}
+.links a {
+  text-decoration: none;
+}
+.links a:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}

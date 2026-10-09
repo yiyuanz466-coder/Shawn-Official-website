@@ -1,0 +1,111 @@
+---
+title: "Mental Health App Usability Testing: Smiling Mind, Insight Timer & 心光"
+summary: "A usability study with 30 participants combining SUS, UEQ-S, product reaction cards and thematic analysis to uncover experience problems in three mental health apps and propose information-architecture and interface redesigns."
+role: Researcher (team of 3)
+timeline: "2024 · National Tsing Hua University"
+team: "Shang-Yuan Chang, 陳圓宓, 張雅晴"
+tools: [SUS, UEQ-S, Product Reaction Cards, Thematic analysis, One-way ANOVA, Information architecture]
+highlights:
+  - value: "30"
+    label: "usability-test participants (aged 19–32)"
+  - value: "3"
+    label: "mental health apps compared"
+  - value: "< 68"
+    label: "all three apps scored below the SUS benchmark"
+---
+
+## Context
+
+**Demand for mental health support is rising**: society is paying more attention to mental health (Swazer, 2024), and social isolation during COVID-19 increased psychological stress (Torres, 2024).
+
+Traditional interventions such as **expressive writing** and **meditation** help release stress and improve self-awareness and emotion regulation (Pennebaker & Beall, 1986; Tang et al., 2015). Today they are moving into apps, from personalized suggestions and meditation courses to AI chat companions and community support.
+
+We compared three representative apps:
+
+<MetricRow items={[
+  { value: 'Smiling Mind', label: "The world's largest free meditation resource" },
+  { value: 'Insight Timer', label: "The world's largest mental health community" },
+  { value: '心光', label: 'AI companionship with mood and journal logging' },
+]} />
+
+## Problem
+
+<Callout title="Research goal">
+Do these apps actually help people complete mental-health tasks? What gets in their way, and what do users expect from them?
+</Callout>
+
+## Research & insights
+
+### Study design
+
+- **Participants**: 30 people (10 men, 20 women), aged 19–32; 10 had used mental health apps before. Recruited through snowball sampling.
+- **Tasks**: five tasks per app covering the core features: log a mood, explore a course, set a reminder, interact (a live event or AI chat), and find the subscription page.
+- **Measures**: the System Usability Scale (SUS), the short User Experience Questionnaire (UEQ-S), Product Reaction Cards (PRC), plus screen recordings and interview audio.
+
+### Quantitative results: none of the apps passed on usability
+
+Mean SUS scores were highest for **Insight Timer (63)**, then **Smiling Mind (54.5)**, with **心光 lowest (41.5)**. A one-way ANOVA showed a near-significant difference (F = 3.244, p = 0.055). **All three scored below the SUS benchmark of 68**, leaving plenty of room to improve.
+
+<Figure src="images/sus.jpg" alt="Mean SUS scores: Smiling Mind 54.5, Insight Timer 63, 心光 41.5" caption="SUS analysis: all three apps fall below the benchmark of 68." wide />
+
+<Figure src="images/ueq.jpg" alt="Bar charts of UEQ-S results for the three apps across pragmatic and hedonic dimensions" caption="UEQ-S: comparing the pragmatic and hedonic quality of each app." wide />
+
+<Figure src="images/prc.jpg" alt="Product reaction card word cloud for Smiling Mind, with confusing, helpful and complicated as the largest words" caption="Product reaction cards (Smiling Mind): “confusing”, “helpful” and “complicated” appear side by side." wide />
+
+### Qualitative analysis: tracing problems to design principles
+
+Following Braun & Clarke's (2006) **thematic analysis**, we open-coded the interview transcripts and used two sets of principles as the framework:
+
+- **Sub-categories**: Nielsen's ten usability heuristics
+- **Categories**: five UX principles: mental models, the Doherty threshold, cognitive load, the aesthetic-usability effect and the active user paradox
+- **Core themes**: weaknesses & challenges, strengths & opportunities, long-term potential
+
+<Figure src="images/themes.jpg" alt="Sunburst charts of qualitative themes for the three apps, split into weaknesses, strengths and long-term potential" caption="Distribution of qualitative themes across the three apps." wide />
+
+<Callout title="Key insight">
+The three apps share the same problems: **deep information architecture, labels that don't match users' mental models, missing feedback and no onboarding**. Users described "combing through every corner" instead of relaxing.
+</Callout>
+
+> "I can't tell at a glance where all its features are." — P5
+
+> "The colors feel quite commercial, not what I imagined meditation would be like." — P3
+
+## Ideation
+
+We proposed four design directions for each app:
+
+- **Smiling Mind**: a simpler, more intuitive interface, feedback on button interactions, built-in help, and language that fits users (for example, a Chinese option).
+- **Insight Timer**: consolidate the complex information architecture, make core features more prominent, add onboarding, and follow users' habits.
+- **心光**: familiar wording and icons, lower feature complexity, AI that also helps explain the app, and more flexible interactions.
+
+## Design & iteration
+
+Take Insight Timer: mood logging was scattered across several entry points, and important features were buried in the "More" menu. We merged duplicate features, restructured the hierarchy, moved mood logging and the profile to more visible places, and added a beginner tutorial.
+
+<BeforeAfter before="images/ia-before.jpg" after="images/ia-after.jpg" beforeAlt="Insight Timer information architecture before, with features scattered across Home, Library, Explore and Community branches" afterAlt="Insight Timer target information architecture, merging duplicate features and adding Check In, More and a beginner tutorial" caption="Insight Timer information architecture: before vs. target." />
+
+## Solution
+
+Redesign proposals for the three apps:
+
+<Figure src="images/proposal-smiling-mind.jpg" alt="Smiling Mind redesign: a phone prototype screen and a QR code to the Figma prototype" caption="Smiling Mind: a flatter hierarchy, onboarding and instant feedback." wide />
+
+<Figure src="images/proposal-insight-timer.jpg" alt="Insight Timer redesign: several phone screens including onboarding and a reorganized home screen" caption="Insight Timer: consolidated architecture, more prominent features and a beginner tour." wide />
+
+<Figure src="images/proposal-xinguang.jpg" alt="心光 redesign: several phone screens with six design notes" caption="心光: familiar wording and icons, separate calendar and chart views, quick logging and a light, warm visual style." wide />
+
+## Results
+
+Every recommendation involves a trade-off, so we summarized them as design tensions to support the product teams' decisions:
+
+<Figure src="images/tradeoffs.jpg" alt="Table of design recommendations and trade-offs for the three apps, such as rich features vs. simple operation and self-exploration vs. timely guidance" caption="Recommendations and trade-offs, such as “rich features vs. simple operation” and “self-exploration vs. timely guidance”." wide />
+
+- **Smiling Mind**: keep the design simple and intuitive, with clear feedback, guidance and user-friendly language.
+- **Insight Timer**: offer rich, personalized features while staying efficient and intuitive, with information presented in levels.
+- **心光**: help users finish tasks easily while keeping the app's personality.
+
+## Reflection
+
+Mental health apps are used in a special context: people often open them while stressed or low. **Any moment of confusion or waiting directly cancels out the calm the app is trying to create.**
+
+This study taught me how to combine quantitative measures (SUS, UEQ-S) with qualitative interviews: the numbers show *where* the problems are, and the interviews explain *why*. If I did it again, I would run a second round of usability testing on the redesigns to check whether the SUS scores actually improve.

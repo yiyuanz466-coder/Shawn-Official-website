@@ -1,0 +1,7 @@
+[data-tone='surface'] { --tone-bg: var(--color-surface); --tone-fg: var(--color-text); }
+[data-tone='purple'] { --tone-bg: var(--card-purple); --tone-fg: var(--on-dark); }
+[data-tone='violet-dark'] { --tone-bg: var(--card-violet-dark); --tone-fg: var(--on-dark); }
+[data-tone='coral'] { --tone-bg: var(--card-coral); --tone-fg: var(--on-dark); }
+[data-tone='ink'] { --tone-bg: var(--card-ink); --tone-fg: var(--on-dark); }
+[data-tone='lavender'] { --tone-bg: var(--card-lavender); --tone-fg: var(--on-light); }
+[data-tone='teal'] { --tone-bg: var(--card-teal); --tone-fg: var(--on-dark); }

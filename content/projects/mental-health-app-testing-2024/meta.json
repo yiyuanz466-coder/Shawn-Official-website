@@ -1,0 +1,14 @@
+{
+  "order": 5,
+  "year": 2024,
+  "category": "work",
+  "cardSize": "2x2",
+  "cardTone": "lavender",
+  "cover": "images/cover.jpg",
+  "coverAlt": {
+    "zh": "三支手機分別顯示心光、Insight Timer 與 Smiling Mind 的 App 畫面",
+    "en": "Three phones showing the 心光, Insight Timer and Smiling Mind apps"
+  },
+  "tags": ["Usability Testing", "UX Research", "Information Architecture"],
+  "protected": false
+}

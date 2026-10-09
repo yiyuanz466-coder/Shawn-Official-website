@@ -1,0 +1,13 @@
+{
+  "cards": [
+    { "id": "intro", "type": "intro", "position": 0, "size": "2x1", "category": "about" },
+    { "id": "email", "type": "contact", "contact": "email", "position": 1, "size": "1x1", "category": "about" },
+    { "id": "linkedin", "type": "contact", "contact": "linkedin", "position": 2, "size": "1x1", "category": "about" },
+    { "id": "quote-1", "type": "quote", "index": 0, "position": 4, "size": "2x1", "category": "about" },
+    { "id": "stat-hackathon", "type": "stat", "index": 0, "tone": "surface", "position": 5, "size": "1x1", "category": "about" },
+    { "id": "stat-npi", "type": "stat", "index": 1, "tone": "teal", "position": 6, "size": "1x1", "category": "about" },
+    { "id": "quote-2", "type": "quote", "index": 1, "position": 8, "size": "2x1", "category": "about" },
+    { "id": "stat-papers", "type": "stat", "index": 2, "tone": "lavender", "position": 9, "size": "1x2", "category": "about" },
+    { "id": "quote-3", "type": "quote", "index": 2, "position": 11, "size": "2x1", "category": "about" }
+  ]
+}

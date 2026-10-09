@@ -1,0 +1,22 @@
+# Dependencies & build output
+node_modules/
+dist/
+
+# Environment
+.env
+.env.*
+
+# Logs & OS / editor files
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Raw source materials (not used by the site; compressed copies live in images/)
+content/projects/*/*.mp4
+content/projects/*/*.MP4
+content/projects/*/*.mov
+content/projects/*/*.pdf
+content/projects/*/*.pptx

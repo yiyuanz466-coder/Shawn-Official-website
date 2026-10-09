@@ -1,0 +1,63 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  background: var(--tone-bg, var(--color-surface));
+  color: var(--tone-fg, var(--color-text));
+  box-shadow: var(--shadow-card);
+  text-decoration: none;
+  transition:
+    transform var(--duration-base) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out),
+    background-color var(--duration-base) var(--ease-out);
+}
+.card:not([data-tone='surface']) { border-color: transparent; }
+/* 深色模式下 ink 卡片和背景太接近，保留細框區隔 */
+:global([data-theme='dark']) .card[data-tone='ink'] { border-color: var(--color-border); }
+
+/* 進場動畫只動 opacity 與 translate，不和 hover 的 transform 衝突 */
+.card:not([data-shown]) { opacity: 0; }
+.card[data-shown] {
+  animation: reveal 600ms var(--ease-out) var(--reveal-delay, 0ms) both;
+}
+@keyframes reveal {
+  from { opacity: 0; translate: 0 16px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+.interactive:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+.interactive:active { transform: translateY(-1px) scale(0.99); }
+.interactive:focus-visible {
+  outline-offset: 4px;
+  border-radius: var(--radius-card);
+}
+
+/* 格線位置：平板與桌機依尺寸跨欄／跨列 */
+@media (min-width: 640px) {
+  .card[data-size='2x1'],
+  .card[data-size='2x2'] { grid-column: span 2; }
+  .card[data-size='1x2'],
+  .card[data-size='2x2'] { grid-row: span 2; }
+}
+
+/* 手機單欄：用最小高度維持比例，內容多時可以長高 */
+@media (max-width: 639px) {
+  .card[data-size='1x1'],
+  .card[data-size='2x1'] { min-height: calc((100vw - 2 * var(--gutter)) / 2); }
+  .card[data-size='1x2'],
+  .card[data-size='2x2'] { min-height: calc(100vw - 2 * var(--gutter)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card:not([data-shown]) { opacity: 1; }
+  .card[data-shown] { animation: none; }
+  .interactive:hover,
+  .interactive:active { transform: none; }
+}

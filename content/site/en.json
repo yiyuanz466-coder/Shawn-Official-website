@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "Shawn Chang — Product & UX Designer",
+    "description": "Portfolio of Shawn Chang: product design, UX research and service design. M.A. student at National Tsing Hua University, innovation intern at Logitech."
+  },
+  "intro": {
+    "greeting": "Hi there 👋",
+    "body": "I'm Shawn Chang, an M.A. design student at National Tsing Hua University and an innovation intern at Logitech, focused on product design, UX research and service design."
+  },
+  "quotes": [
+    "Good design starts with **defining the right problem**.",
+    "Turn insights into **prototypes fast**, then let users tell us the answer.",
+    "Design only ships when it balances **user value and business value**."
+  ],
+  "stats": [
+    { "value": "130+", "label": "participants in Logitech's global hackathon" },
+    { "value": "2", "label": "innovation concepts moved into NPI" },
+    { "value": "4", "label": "conference papers published" }
+  ],
+  "about": {
+    "heading": "Turning user needs into products through research insight and rapid prototyping.",
+    "paragraphs": [
+      "I'm Shawn Chang, an M.A. student in Arts and Design at National Tsing Hua University, focusing on product design, UX research and service design. I combine design thinking with business thinking, work comfortably with both qualitative and quantitative methods, and have published four conference papers.",
+      "As an innovation intern at Logitech, I ran the company's global hackathon and helped the team turn scattered ideas into a searchable innovation database, bringing in NotebookLM so colleagues could explore and converge concepts in natural language. Two of the ideas were selected by leadership for NPI.",
+      "I'm also a member of NTU's Data Analytics & Decision Club and Management Consulting Club, which trained me to define problems precisely and make data-driven decisions."
+    ],
+    "experience": [
+      {
+        "period": "Mar. 2025 – Present",
+        "org": "Logitech · Innovation & Scenario Lab",
+        "role": "Taiwan Innovation Intern",
+        "description": "Co-defined the annual innovation challenges with department heads and ran 4 innovation programs (Mei-Chu Hackathon, MakeNTU, Logi Hackathon, Epoch Garage+) on time within a NT$1.2M budget, drawing 50+ teams and 300+ participants and producing 100+ concepts and PoC prototypes. Two hardware concepts (mouse, keyboard) advanced into NPI. Built a department portal with a NotebookLM innovation knowledge base and led 3+ Future Design workshops.",
+        "logo": "logo-logitech.png",
+        "logoAlt": "Logitech logo"
+      },
+      {
+        "period": "Jan. 2025 – Feb. 2025",
+        "org": "Taiwan Design Research Institute · Strategic Foresight R&D",
+        "role": "Design Research Intern (2.89% acceptance rate)",
+        "description": "Reviewed 30+ papers on smart healthcare and design technology across 10 foresight topics, organized an expert panel and analyzed interviews, and synthesized foresight trends and international market opportunities.",
+        "logo": "logo-tdri.png",
+        "logoAlt": "Taiwan Design Research Institute logo"
+      },
+      {
+        "period": "Jul. 2022 – Jun. 2023",
+        "org": "Microsoft · Device Partner Solution Sales",
+        "role": "Marketing Operation Intern",
+        "description": "Cleaned 100,000+ PC sales records and built Power BI dashboards showing MoM and QoQ performance across OEM and channel SKUs, used by sales and account managers to set second-half budgets; co-marketed Windows 11 and Microsoft 365 with Intel and resellers at 2 roadshows and a launch event (110+ attendees).",
+        "logo": "logo-microsoft.png",
+        "logoAlt": "Microsoft logo"
+      },
+      {
+        "period": "Undergraduate – M.A.",
+        "org": "NSTC-funded research projects",
+        "role": "Research Assistant",
+        "logo": "logo-nthu.png",
+        "logoAlt": "National Tsing Hua University emblem",
+        "description": "Supported three NSTC projects on AIGC in design workflows, kansei and usability of physical vs. virtual interfaces, and home dialysis self-care. Led study design, data collection and analysis (Excel, SPSS)."
+      }
+    ],
+    "education": [
+      { "period": "Current", "school": "National Tsing Hua University", "degree": "M.A., Arts and Design" }
+    ],
+    "clubs": [
+      {
+        "name": "NTU Consulting Club",
+        "logo": "ntucc.png",
+        "logoAlt": "NTU Consulting Club logo",
+        "description": "Trained in consulting thinking: defining problems precisely, breaking them down and communicating in a structured way."
+      },
+      {
+        "name": "NTU Data Analytics Club",
+        "logo": "ntudac.png",
+        "logoAlt": "NTU Data Analytics Club logo",
+        "description": "Learned data analysis methods and tools, and built a data-driven approach to decision making."
+      }
+    ]
+  }
+}
