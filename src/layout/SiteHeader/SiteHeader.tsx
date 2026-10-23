@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router'
+import { getSiteAsset } from '../../content/site'
 import { parseFilter } from '../../content/wall'
 import { useI18n } from '../../i18n/useI18n'
 import { Icon } from '../../ui/Icon/Icon'
@@ -30,7 +31,7 @@ export function SiteHeader() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <Link to={`/${lang}`} className={styles.logo} aria-label={t.header.home}>
-          SC<span className={styles.dot}>.</span>
+          <img src={getSiteAsset('logo.png')} alt="" className={styles.logoImage} />
         </Link>
         <div className={styles.nav}>
           <FilterNav active={activeFilter} />

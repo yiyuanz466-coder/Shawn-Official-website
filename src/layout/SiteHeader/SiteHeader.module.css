@@ -24,13 +24,14 @@
 .logo {
   grid-area: logo;
   justify-self: start;
-  font-size: 1.5rem;
-  font-weight: var(--weight-semibold);
-  letter-spacing: -0.02em;
-  text-decoration: none;
-  color: var(--color-text);
+  display: block;
+  border-radius: 50%;
 }
-.dot { color: var(--color-accent); }
+.logoImage {
+  display: block;
+  width: 44px;
+  height: 44px;
+}
 
 .nav { grid-area: nav; min-width: 0; }
 
