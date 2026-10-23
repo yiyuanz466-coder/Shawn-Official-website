@@ -89,7 +89,7 @@ export function AboutPage() {
       </section>
 
       <div className={styles.actions}>
-        <ButtonLink href={profile.resume[lang]} download icon="download">
+        <ButtonLink href={`${import.meta.env.BASE_URL}${profile.resume[lang].replace(/^\//, '')}`} download icon="download">
           {t.about.resume}
         </ButtonLink>
         <ButtonLink href={`mailto:${profile.email}`} variant="secondary" icon="mail">

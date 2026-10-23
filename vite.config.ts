@@ -38,6 +38,8 @@ function tolerateLockedFiles(): Plugin {
 }
 
 export default defineConfig({
+  // GitHub Pages 的網址是 /<repo 名稱>/，部署時由 BASE_PATH 指定；本機開發維持 /
+  base: process.env.BASE_PATH ?? '/',
   plugins: [
     {
       enforce: 'pre',
